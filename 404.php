@@ -28,6 +28,7 @@ $basethemevar_error_menu_bottom_text             = $option_fields['basethemevar_
 $basethemevar_error_search             = $option_fields['basethemevar_error_search'];
 
 //Changed 404 file so master can be pushed
+// Changes done
 ?>
 
 <div class="s-section">
