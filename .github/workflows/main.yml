@@ -16,7 +16,7 @@ jobs:
       uses: bowiedev/github-action-wpengine-ssh-deploy@master
       env:
           WPE_ENV_NAME: autodeploystag
-          WPE_SSHG_KEY_PUBLIC: ${{ secrets.REPO_PUBLIC_KEY }}
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.REPO_PRIVATE_KEY }}
+          WPE_SSHG_KEY_PUBLIC: ${{ secrets.REPO_PUBLIC_KEY_FALSE }}
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.REPO_PRIVATE_KEY_FALSE }}
           TPO_SRC_PATH: ""
           TPO_PATH: ""
