@@ -1,22 +1,28 @@
 name: Deploy to WP Engine
-
 on:
   push:
-    branches:
-        - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: SSH Deploy to WP Engine
-      uses: bowiedev/github-action-wpengine-ssh-deploy@master
+    - name: GitHub Action Deploy to WP Engine
+      uses: wpengine/github-action-wpe-site-deploy@main
       env:
-          WPE_ENV_NAME: autodeploystag
-          WPE_SSHG_KEY_PUBLIC: ${{ secrets.PUBLIC_KEY_NAME_NEW }}
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.PRIVATE_KEY_NAME }}
-          TPO_SRC_PATH: ""
-          TPO_PATH: ""
+
+      # Keys, lint & url options
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.PRIVATE_KEY_NAME }}
+        PHP_LINT: TRUE
+        TPO_SRC_PATH: ""
+        TPO_PATH: ""
+
+      # Branches & Environments
+        PRD_BRANCH: master
+        PRD_ENV: autodeploystag
+
+        # STG_BRANCH: feature/stage
+        # STG_ENV: stagesitehere
+
+        # DEV_BRANCH: feature/dev
+        # DEV_ENV: devsitehere
