@@ -31,6 +31,7 @@ $basethemevar_error_search             = $option_fields['basethemevar_error_sear
 // Changes done
 //another change
 // Develop branch
+// Added another line
 ?>
 
 <div class="s-section">
