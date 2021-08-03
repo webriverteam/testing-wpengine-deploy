@@ -16,6 +16,7 @@
  * Now with REVIEWDOG_GITHUB_API_TOKEN set in environment - again
  *
  * Now with set the repo secrect used that was created in start
+ * Added more YAML files.
  */
 $block_fields = get_fields( $block['id'] );
 

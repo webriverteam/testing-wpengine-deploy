@@ -13,6 +13,7 @@
 
 /**
  * Load WPGulp Configuration.
+ * sdfasdf
  *
  * TO DO: Customize your project in the wpgulp.js file.
  */
@@ -155,35 +156,35 @@ gulp.task("styles", () => {
 gulp.task("scripts", () => {
 	return (
 		gulp
-			.src(config.jsSRC, {
-				// since: gulp.lastRun('scripts')  // run task only on changed files
-			}) // Only run on changed files.
-			.pipe(count("## number of JS files selected")) // Count number of files to work with
-			.pipe(plumber(errorHandler))
-			.pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
-			.pipe(
-				concat(config.jsFile + ".js", {
-					newLine: ";",
-				}),
-			)
-			.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-			.pipe(gulp.dest(config.jsDestination))
-			.pipe(
-				rename({
-					basename: config.jsFile,
-					suffix: ".min",
-				}),
-			)
-			// .pipe(uglify())
-			// .pipe(minify())
-			.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-			.pipe(gulp.dest(config.jsDestination))
-			.pipe(
-				notify({
-					message: "\n\n✅ ===> JS Processes ✅ completed!\n",
-					onLast: true,
-				}),
-			)
+		.src(config.jsSRC, {
+			// since: gulp.lastRun('scripts')  // run task only on changed files
+		}) // Only run on changed files.
+		.pipe(count("## number of JS files selected")) // Count number of files to work with
+		.pipe(plumber(errorHandler))
+		.pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
+		.pipe(
+			concat(config.jsFile + ".js", {
+				newLine: ";",
+			}),
+		)
+		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+		.pipe(gulp.dest(config.jsDestination))
+		.pipe(
+			rename({
+				basename: config.jsFile,
+				suffix: ".min",
+			}),
+		)
+		// .pipe(uglify())
+		// .pipe(minify())
+		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+		.pipe(gulp.dest(config.jsDestination))
+		.pipe(
+			notify({
+				message: "\n\n✅ ===> JS Processes ✅ completed!\n",
+				onLast: true,
+			}),
+		)
 	);
 });
 
@@ -220,8 +221,7 @@ gulp.task("images", () => {
 						optimizationLevel: 3,
 					}), // 0-7 low-high.
 					imagemin.svgo({
-						plugins: [
-							{
+						plugins: [{
 								removeViewBox: true,
 							},
 							{
@@ -304,7 +304,7 @@ gulp.task("clean", gulp.series("clearCache"), function () {
 });
 
 // Task to be run as final to build zip file of theme assets and files
-gulp.task("final", gulp.series("clean", "build", "zip", function () { }));
+gulp.task("final", gulp.series("clean", "build", "zip", function () {}));
 
 /**
  * Watch Tasks.
