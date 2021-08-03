@@ -5,6 +5,7 @@ Author: Team Glide
 Author URI: http://glidedesign.com/team
 Description: WordPress theme by Glide Design
 Version: 1.0
+mispell in CSS Comment
 */
 
 /*------------------------------------------------------------------
@@ -62,12 +63,15 @@ Version: 1.0
 > Vendors
 	> Owl Carousel
 	> Slick Nav
+	> mispell as added SCSS partial name in main.scss
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 > Variables
 ------------------------------------------------------------------*/
 @import "partials/variables/variables";
+
+@import "partials/mispell";
 
 /*------------------------------------------------------------------
 > Mixins
