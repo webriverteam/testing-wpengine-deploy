@@ -14,6 +14,8 @@
  * New comment with bad token
  *
  * Now with REVIEWDOG_GITHUB_API_TOKEN set in environment - again
+ *
+ * Now with set the repo secrect used that was created in start
  */
 $block_fields = get_fields( $block['id'] );
 
