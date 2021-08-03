@@ -8,6 +8,8 @@
  *
  * @package BaseTheme 2021
  * @since 1.0.0
+ *
+ * This comment to check PHPCS
  */
 $block_fields = get_fields( $block['id'] );
 

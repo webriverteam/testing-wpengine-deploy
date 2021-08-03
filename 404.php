@@ -31,7 +31,6 @@ $basethemevar_error_search             = $option_fields['basethemevar_error_sear
 // Changes done
 //another change
 // Develop branch
-// This is to check phpcs action
 ?>
 
 <div class="s-section">
