@@ -22,3 +22,5 @@
 ### Issues
 
 ### Remaining Things
+
+Added some project details to check pull rquest reviewdog
