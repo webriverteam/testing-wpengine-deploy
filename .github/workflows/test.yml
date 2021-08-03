@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          github_token: ${{ REPO_TOKEN_GITHUB }}
+          github_token: ${{ secrets.REPO_TOKEN_GITHUB }}
           reporter: github-check
           level: info
           tool_name: 'phpcs-check'
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          github_token: ${{ REPO_TOKEN_GITHUB }}
+          github_token: ${{ secrets.REPO_TOKEN_GITHUB }}
           reporter: github-pr-check
           level: warning
           phpcs_args: '--standard=WordPress .'
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          github_token: ${{ REPO_TOKEN_GITHUB }}
+          github_token: ${{ secrets.REPO_TOKEN_GITHUB }}
           reporter: github-pr-review
           level: error
           reviewdog_flags: -filter-mode=file -fail-on-error

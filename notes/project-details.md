@@ -24,5 +24,5 @@
 ### Remaining Things
 
 Added some project details to check pull rquest reviewdog
-Updated REPO_TOKEN_GITHUB in YAML files
-Updated REPO_TOKEN_GITHUB in YAML files again
+Updated secrets.REPO_TOKEN_GITHUB in YAML files
+Updated secrets.REPO_TOKEN_GITHUB in YAML files again
