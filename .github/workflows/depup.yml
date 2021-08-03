@@ -21,7 +21,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.new_github_token }}
           title: "chore(deps): update reviewdog to ${{ steps.depup.outputs.latest }}"
           commit-message: "chore(deps): update reviewdog to ${{ steps.depup.outputs.latest }}"
           body: |
