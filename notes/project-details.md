@@ -30,4 +30,4 @@ Updated REPO_TOKEN_GITHUB in YAML files again again
 Trying again after error code 1
 Added brand new reviewdogs.yml file
 ths iz spellng chck eror comit on Githb frm Locl
-mispell word typd here.
+mispell in MD file as text

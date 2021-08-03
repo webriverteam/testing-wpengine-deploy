@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Homepage
+ * Template Name: mispell Template name
  * Template Post Type: page
  *
  * This template is for displaying home page.

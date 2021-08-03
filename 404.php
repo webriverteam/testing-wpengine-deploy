@@ -6,10 +6,15 @@
  *
  * @package BaseTheme 2021
  * @since 1.0.0
+ *
+ * mispell in php file
  */
 
 // Include header
 get_header();
+
+// mispell as variable name in php
+$mispell = null;
 
 // Global variables
 global $option_fields;

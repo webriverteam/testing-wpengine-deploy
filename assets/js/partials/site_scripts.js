@@ -1,20 +1,22 @@
 /**
  * Sticky header
+ * mispell as JS comment
  */
 
-jQuery(document).on("scroll", function() {
+jQuery(document).on("scroll", function () {
 	if (jQuery(document).scrollTop() > 0) {
 		jQuery("header, body").addClass("shrink");
 	} else {
 		jQuery("header, body").removeClass("shrink");
 	}
+	jQuery(".mispell").css("Display", "none");
 });
 
-jQuery(document).ready(function(jQuery) {
+jQuery(document).ready(function (jQuery) {
 	/**
 	 * Toggle menu for mobile
 	 */
-	jQuery(".menu-btn").click(function() {
+	jQuery(".menu-btn").click(function () {
 		jQuery(this).toggleClass("active");
 		jQuery(".menu-overlay").toggleClass("open");
 		jQuery("html, body").toggleClass("no-overflow");
@@ -25,7 +27,7 @@ jQuery(document).ready(function(jQuery) {
 	/**
 	 * Multilevel accordion menu for mobile
 	 */
-	jQuery("li").each(function() {
+	jQuery("li").each(function () {
 		if (jQuery(this).hasClass("menu-item-has-children")) {
 			jQuery(this).prepend('<span class="submenu-icon"></span>');
 		}

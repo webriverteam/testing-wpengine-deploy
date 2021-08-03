@@ -16,3 +16,4 @@ This is  a BaseTheme 2021 WordPress theme by AbuBakar to demostrate his WordPres
 
 = 1.0 - Jan 01 2021 =
 * Initial release
+* mispell as comment in README WP file

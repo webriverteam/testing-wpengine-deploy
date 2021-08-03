@@ -87,7 +87,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="basetheme21_td"/>
+				<element value="mispell_td"/>
 			</property>
 		</properties>
 	</rule>
@@ -95,7 +95,7 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="basethemevar"/>
+				<element value="mispell"/>
 			</property>
 		</properties>
 	</rule>
