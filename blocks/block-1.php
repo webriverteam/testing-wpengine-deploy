@@ -10,6 +10,8 @@
  * @since 1.0.0
  *
  * This comment to check PHPCS
+ *
+ * New comment with bad token
  */
 $block_fields = get_fields( $block['id'] );
 
