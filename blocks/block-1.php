@@ -10,6 +10,10 @@
  * @since 1.0.0
  *
  * This comment to check PHPCS
+ *
+ * New comment with bad token
+ *
+ * Now with REVIEWDOG_GITHUB_API_TOKEN set in environment
  */
 $block_fields = get_fields( $block['id'] );
 
